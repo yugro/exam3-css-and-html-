@@ -26,7 +26,7 @@
 </header>
 <div class="popup">
 
-    <div id="popclose"><img src="/img/pop.png"></div>
+    <div id="popclose">CLOSE</div>
 <form type="post">
     <label>Ваше имя *</label>
 <input type="text">
@@ -180,7 +180,7 @@
   $('#backcall').click(function() {
     $('.popup').show();
   })
-  $('.popup').click(function() {
+  $('#popclose').click(function() {
     $('.popup').hide();
   })
 </script>
