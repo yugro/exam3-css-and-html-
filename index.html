@@ -24,6 +24,21 @@
 
 
 </header>
+<div class="popup">
+
+    <div id="popclose"><img src="/img/pop.png"></div>
+<form type="post">
+    <label>Ваше имя *</label>
+<input type="text">
+    <label>Телефон *</label>
+<input type="tel">
+    <label>Email *</label>
+<input type="emai">
+    <label>Сообщение</label>
+<textarea rows="10"></textarea>
+    <button type="submit">Send</button>
+</form>
+</div>
 <nav>
     <div class="menu">
         <ul>
@@ -35,6 +50,7 @@
         </ul>
     </div>
 </nav>
+
 <div class="slider">
     <div class="slidercontainer">
         <img id="img1" src="img/slider.png" alt="first pic">
@@ -113,6 +129,7 @@
                 </div>
             </div>
         </div>
+        <div class="pager">1 2 <span>3</span> 4 5 6 7</div>
         <hr>
         <div id="content3">
             <div id="content3_1">
@@ -158,5 +175,15 @@
         </div>
     </div>
 </footer>
+
+<script>
+  $('#backcall').click(function() {
+    $('.popup').show();
+  })
+  $('.popup').click(function() {
+    $('.popup').hide();
+  })
+</script>
+
 </body>
 </html>
